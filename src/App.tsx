@@ -23,6 +23,7 @@ const App = () => {
           <Link to="/about" className="hover:text-blue-400 transition">Experience</Link>
           <Link to="/projects" className="hover:text-blue-400 transition">Projects</Link>
           <Link to="/contact" className="hover:text-blue-400 transition">Contact</Link>
+          <Link to="https://getcode1567777.blogspot.com/"   target="_blank"  className="hover:text-blue-400 transition">Blog</Link>
         </div>
         <button className="md:hidden text-white z-50" onClick={toggleMenu}>
           {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
@@ -33,6 +34,7 @@ const App = () => {
           <Link to="/about" className="hover:text-blue-400 transition" onClick={toggleMenu}>Experience</Link>
           <Link to="/projects" className="hover:text-blue-400 transition" onClick={toggleMenu}>Projects</Link>
           <Link to="/contact" className="hover:text-blue-400 transition" onClick={toggleMenu}>Contact</Link>
+          <Link to="https://getcode1567777.blogspot.com/"  target="_blank"  className="hover:text-blue-400 transition" onClick={toggleMenu}>Blog</Link>
         </div>
       </nav>
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="flex-grow pt-10" onClick={() => setIsOpen(false)}>
