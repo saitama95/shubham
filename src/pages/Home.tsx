@@ -1,6 +1,7 @@
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import myPhoto from "../assets/shubham.png";
+import { Link } from "react-router-dom";
 import { FaNodeJs, FaDocker, FaPhp, FaReact, FaLaravel} from "react-icons/fa";
 import { SiExpress, SiMongodb, SiIonic ,SiAngular,SiJavascript,SiTailwindcss ,SiGit, SiGithub, SiMysql} from "react-icons/si";
 const Home = () => (
@@ -34,9 +35,12 @@ const Home = () => (
           I specialize in creating modern web and mobile applications using Php, laravel, Mysql , Angular,React and Ionic.
         </p>
         <div className="mt-6">
-          <button className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-lg transition duration-300">
+        <Link
+            to="/projects"
+            className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-lg transition duration-300 text-center"
+          >
             View My Work
-          </button>
+          </Link>
         </div>
       </div>
       
@@ -72,8 +76,8 @@ const Home = () => (
         <FaLaravel className="text-6xl text-red-600 hover:scale-110 transition" />
         <SiTailwindcss className="text-6xl text-blue-500 hover:scale-110 transition" />
         <SiGit className="text-6xl text-red-500 hover:scale-110 transition" />
-<SiGithub className="text-6xl text-white hover:scale-110 transition bg-black rounded-full p-1" />
-<SiMysql className="text-6xl text-[#00758F] hover:scale-110 transition" />
+        <SiGithub className="text-6xl text-white hover:scale-110 transition bg-black rounded-full p-1" />
+        <SiMysql className="text-6xl text-[#00758F] hover:scale-110 transition" />
       </div>
     </div>
 
