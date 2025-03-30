@@ -1,37 +1,38 @@
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import myPhoto from "../assets/shubham.png";
-import {  FaLaravel, FaAngular, FaCss3Alt, FaHtml5 } from "react-icons/fa";
-import { FaNodeJs, FaDatabase, FaDocker, FaPhp, FaReact } from "react-icons/fa";
-import { SiExpress, SiMongodb, SiIonic } from "react-icons/si";
+import { FaNodeJs, FaDocker, FaPhp, FaReact, FaLaravel} from "react-icons/fa";
+import { SiExpress, SiMongodb, SiIonic ,SiAngular,SiJavascript,SiTailwindcss} from "react-icons/si";
 const Home = () => (
-    <div className="relative w-full h-screen flex flex-col justify-center items-center bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white">
+    <div className="relative w-full min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white p-6">
     {/* Animated Background Elements */}
     <div className="absolute inset-0 overflow-hidden">
       <motion.div 
-        className="absolute w-96 h-96 bg-blue-500 opacity-20 rounded-full blur-3xl top-10 left-10"
+        className="absolute w-72 h-72 bg-blue-500 opacity-20 rounded-full blur-3xl top-10 left-5 md:left-10"
         animate={{ scale: [1, 1.2, 1] }}
         transition={{ repeat: Infinity, duration: 6 }}
       />
       <motion.div 
-        className="absolute w-80 h-80 bg-purple-500 opacity-20 rounded-full blur-3xl bottom-20 right-20"
+        className="absolute w-60 h-60 bg-purple-500 opacity-20 rounded-full blur-3xl bottom-20 right-5 md:right-20"
         animate={{ scale: [1, 1.5, 1] }}
         transition={{ repeat: Infinity, duration: 8 }}
       />
     </div>
     
-    <div className="container mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-8 z-10">
+    <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-8 z-10 items-center">
       {/* Intro Section */}
-      <div className="flex flex-col justify-center text-left">
-        <h1 className="text-5xl font-bold">Hello, I'm</h1>
+      <div className="flex flex-col justify-center text-center lg:text-left">
+        <h1 className="text-4xl md:text-5xl font-bold">Hello, I'm</h1>
         <TypeAnimation
           sequence={["Shubham Maurya", 2000, "Fullstack Developer", 2000, "Building Digital Experiences", 2000]}
           wrapper="h2"
           speed={50}
           repeat={Infinity}
-          className="text-4xl font-extrabold text-blue-400"
+          className="text-3xl md:text-4xl font-extrabold text-blue-400"
         />
-        <p className="mt-4 text-lg text-gray-300">I specialize in creating modern web and mobile applications using React, Angular, and Laravel.</p>
+        <p className="mt-4 text-base md:text-lg text-gray-300">
+          I specialize in creating modern web and mobile applications using Node.js, Express.js, MongoDB, Docker, PHP, and Ionic.
+        </p>
         <div className="mt-6">
           <button className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-lg transition duration-300">
             View My Work
@@ -40,11 +41,11 @@ const Home = () => (
       </div>
       
       {/* Image Section */}
-      <div className="flex justify-center md:justify-end">
+      <div className="flex justify-center lg:justify-end">
         <motion.img 
           src={myPhoto} 
           alt="Shubham Maurya" 
-          className="w-72 h-72 md:w-96 md:h-96 rounded-full border-4 border-blue-400 shadow-xl"
+          className="w-48 h-48 md:w-72 md:h-72 lg:w-96 lg:h-96 rounded-full border-4 border-blue-400 shadow-xl"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
@@ -52,34 +53,27 @@ const Home = () => (
       </div>
     </div>
 
-     {/* Open to Work Section */}
-     {/* <div className="w-full mt-12 px-8 py-6 bg-blue-900 text-center text-white">
-      <h2 className="text-3xl font-bold mb-4">🚀 Open to Work!</h2>
-      <p className="text-lg mb-4">I'm actively seeking new opportunities in Fullstack Development. If you're looking for a passionate developer to join your team, let's connect!</p>
-      <a href="mailto:shubham@example.com" className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-lg transition duration-300">
-        Contact Me
-      </a>
-    </div> */}
-
-    {/* Skills Section */}
-    <div className="w-full mt-12 px-8 py-6 bg-gray-800 text-center">
-      <h2 className="text-3xl font-bold text-white mb-6">Skills & Technologies</h2>
-      <div className="flex justify-center gap-8 text-5xl text-blue-400">
-        <FaReact title="React" className="hover:text-blue-500 transition" />
-        <FaAngular title="Angular" className="hover:text-red-500 transition" />
-        <FaLaravel title="Laravel" className="hover:text-red-600 transition" />
-        <FaNodeJs title="Node.js" className="hover:text-green-500 transition" />
-        <FaHtml5 title="HTML5" className="hover:text-orange-500 transition" />
-        <FaCss3Alt title="CSS3" className="hover:text-blue-500 transition" />
-        <SiExpress title="Express.js" className="hover:text-gray-500 transition" />
-        <SiMongodb title="MongoDB" className="hover:text-green-700 transition" />
-        <FaDocker title="Docker" className="hover:text-blue-500 transition" />
-        <FaPhp title="PHP" className="hover:text-indigo-500 transition" />
-        <SiIonic title="Ionic" className="hover:text-blue-400 transition" />
+     {/* Skills Section */}
+     <div className="mt-12 text-center bg-gray-800 p-8 rounded-xl shadow-lg">
+      <h2 className="text-4xl font-extrabold text-blue-400 mb-6 relative inline-block">
+        My Skills
+        {/* <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-blue-500"></span> */}
+      </h2>
+      <div className="flex flex-wrap justify-center gap-6 text-white">
+        <FaNodeJs className="text-6xl text-green-500 hover:scale-110 transition" />
+        <SiExpress className="text-6xl text-gray-500 hover:scale-110 transition" />
+        <SiMongodb className="text-6xl text-green-400 hover:scale-110 transition" />
+        <FaDocker className="text-6xl text-blue-500 hover:scale-110 transition" />
+        <FaPhp className="text-6xl text-indigo-500 hover:scale-110 transition" />
+        <FaReact className="text-6xl text-blue-400 hover:scale-110 transition" />
+        <SiIonic className="text-6xl text-blue-600 hover:scale-110 transition" />
+        <SiAngular className="text-6xl text-red-500 hover:scale-110 transition" />
+        <SiJavascript className="text-6xl text-yellow-400 hover:scale-110 transition" />
+        <FaLaravel className="text-6xl text-red-600 hover:scale-110 transition" />
+        <SiTailwindcss className="text-6xl text-blue-500 hover:scale-110 transition" />
       </div>
     </div>
 
-     
   </div>
   );
 export default Home;

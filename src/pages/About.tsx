@@ -1,5 +1,5 @@
-import { SiExpress, SiMongodb, SiIonic, SiBootstrap, SiJquery, SiJavascript, SiCapacitor } from "react-icons/si";
-import { FaNodeJs, FaDatabase, FaDocker, FaPhp, FaReact, FaBuilding, FaBriefcase } from "react-icons/fa";
+import { SiBootstrap, SiJquery, SiJavascript, SiCapacitor } from "react-icons/si";
+import {  FaBuilding, FaBriefcase } from "react-icons/fa";
 const About = () => (
     <div className="w-full h-screen flex flex-col justify-center items-center bg-gray-900 text-white text-center px-8">
     <h2 className="text-4xl font-bold mb-6">Experience</h2>
