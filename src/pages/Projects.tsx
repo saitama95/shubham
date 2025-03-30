@@ -44,13 +44,13 @@ const Projects = () => {
           <button onClick={() => setFilter("website")} className={`px-4 py-2 rounded ${filter === "website" ? "bg-blue-500" : "bg-gray-700"}`}>Websites</button>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-4xl">
-          {filteredProjects.map((project, index) => (
+          {filteredProjects.map((project:any, index:number) => (
             <div key={index} className="bg-gray-800 p-4 rounded-lg shadow-lg flex flex-col items-center">
               <img src={project.logo} alt={project.name} className="w-16 h-16 mb-4" />
               <h3 className="text-xl font-semibold text-blue-400">{project.name}</h3>
               {project.type === "app" ? (
                 <Slider className="w-full h-40 my-4" dots infinite autoplay>
-                  {project.images.map((img, i) => (
+                  {project.images.map((img:string, i:number) => (
                     <img key={i} src={img} alt={`${project.name} screenshot`} className="w-full h-40 object-contain rounded" />
                   ))}
                 </Slider>
