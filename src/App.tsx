@@ -17,7 +17,7 @@ const App = () => {
     <Router basename="/shubham">
     <div className="min-h-screen flex flex-col bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white">
       <nav className="p-4 flex justify-between items-center shadow-lg relative z-50">
-        <h1 className="text-2xl font-bold text-blue-400">Shubham Portfolio</h1>
+        <Link to="/" className="text-2xl font-bold text-blue-400">Shubham Portfolio</Link>
         <div className="hidden md:flex space-x-6 text-white">
           <Link to="/" className="hover:text-blue-400 transition">Home</Link>
           <Link to="/about" className="hover:text-blue-400 transition">Experience</Link>
