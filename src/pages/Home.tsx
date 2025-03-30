@@ -2,7 +2,7 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import myPhoto from "../assets/shubham.png";
 import { FaNodeJs, FaDocker, FaPhp, FaReact, FaLaravel} from "react-icons/fa";
-import { SiExpress, SiMongodb, SiIonic ,SiAngular,SiJavascript,SiTailwindcss} from "react-icons/si";
+import { SiExpress, SiMongodb, SiIonic ,SiAngular,SiJavascript,SiTailwindcss ,SiGit, SiGithub, SiMysql} from "react-icons/si";
 const Home = () => (
     <div className="relative w-full min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white p-6">
     {/* Animated Background Elements */}
@@ -31,7 +31,7 @@ const Home = () => (
           className="text-3xl md:text-4xl font-extrabold text-blue-400"
         />
         <p className="mt-4 text-base md:text-lg text-gray-300">
-          I specialize in creating modern web and mobile applications using Node.js, Express.js, MongoDB, Docker, PHP, and Ionic.
+          I specialize in creating modern web and mobile applications using Php, laravel, Mysql , Angular,React and Ionic.
         </p>
         <div className="mt-6">
           <button className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-lg transition duration-300">
@@ -71,6 +71,9 @@ const Home = () => (
         <SiJavascript className="text-6xl text-yellow-400 hover:scale-110 transition" />
         <FaLaravel className="text-6xl text-red-600 hover:scale-110 transition" />
         <SiTailwindcss className="text-6xl text-blue-500 hover:scale-110 transition" />
+        <SiGit className="text-6xl text-red-500 hover:scale-110 transition" />
+<SiGithub className="text-6xl text-white hover:scale-110 transition bg-black rounded-full p-1" />
+<SiMysql className="text-6xl text-[#00758F] hover:scale-110 transition" />
       </div>
     </div>
 

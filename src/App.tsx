@@ -17,10 +17,10 @@ const App = () => {
     <Router basename="/shubham">
     <div className="min-h-screen flex flex-col bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white">
       <nav className="p-4 flex justify-between items-center shadow-lg relative z-50">
-        <h1 className="text-2xl font-bold text-blue-400">Shubham's Portfolio</h1>
+        <h1 className="text-2xl font-bold text-blue-400">Shubham Portfolio</h1>
         <div className="hidden md:flex space-x-6 text-white">
           <Link to="/" className="hover:text-blue-400 transition">Home</Link>
-          <Link to="/about" className="hover:text-blue-400 transition">About</Link>
+          <Link to="/about" className="hover:text-blue-400 transition">Experience</Link>
           <Link to="/projects" className="hover:text-blue-400 transition">Projects</Link>
           <Link to="/contact" className="hover:text-blue-400 transition">Contact</Link>
         </div>
@@ -30,7 +30,7 @@ const App = () => {
         <div className={`fixed top-0 left-0 h-full w-64 bg-gray-900 text-white flex flex-col space-y-6 p-6 transition-transform duration-300 transform ${isOpen ? "translate-x-0" : "-translate-x-full"}`}>
           <button className="self-end text-white" onClick={toggleMenu}><FaTimes size={24} /></button>
           <Link to="/" className="hover:text-blue-400 transition" onClick={toggleMenu}>Home</Link>
-          <Link to="/about" className="hover:text-blue-400 transition" onClick={toggleMenu}>About</Link>
+          <Link to="/about" className="hover:text-blue-400 transition" onClick={toggleMenu}>Experience</Link>
           <Link to="/projects" className="hover:text-blue-400 transition" onClick={toggleMenu}>Projects</Link>
           <Link to="/contact" className="hover:text-blue-400 transition" onClick={toggleMenu}>Contact</Link>
         </div>
