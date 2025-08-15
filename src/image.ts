@@ -16,7 +16,8 @@ const astro2 = "/shubham/Project/astro/2.PNG";
 const conLogo = "/shubham/Project/counsoller/logo.png";
 const con1 = "/shubham/Project/counsoller/con1.PNG";
 const con2 = "/shubham/Project/counsoller/con2.PNG";
-
+const wizenLogo = "/shubham/Project/counsoller/wizenLogo.PNG";
+const wiz = "/shubham/Project/counsoller/wiz.PNG";
 export {
     IIALogo,
     iiImage1,
@@ -33,4 +34,6 @@ export {
     conLogo,
     con1,
     con2,
+    wizenLogo,
+    wiz
 };
