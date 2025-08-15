@@ -21,6 +21,8 @@ import {
 
     conLogo,
     con1,
+    wizenLogo,
+    wiz
     // con2
 } from "../image"
 const Projects = () => {
@@ -29,7 +31,7 @@ const Projects = () => {
         { type: "app", name: "Madhurima", logo: madhlogo, images: [madh1, madh2, madh3], description: "A feature-rich Android application.", link: "https://play.google.com/store/search?q=madhurima&c=apps&hl=en" },
         { type: "website", name: "Astrourja", logo: astrologo, image: astro1, description: "A modern and responsive website.", link: "https://astrourja.in/" },
         { type: "website", name: "Mycounsellor", logo: conLogo, image: con1, description: "A dynamic and interactive web solution.", link: "https://mycounsellor.co.in/" },
-        { type: "website", name: "Wizensefunding", logo: wizenLogo, image: con2, description: "A dynamic and interactive web solution.", link: "https://wizensefunding.com/" },
+        { type: "website", name: "Wizensefunding", logo: wizenLogo, image: wiz, description: "A dynamic and interactive web solution.", link: "https://wizensefunding.com/" },
       ];
 
     const [filter, setFilter] = useState("all");
